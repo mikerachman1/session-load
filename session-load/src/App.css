@@ -2,7 +2,7 @@
   border: 1px solid white;
 }
 
-.climb-header, .climb-body, .climb-foot {
+.section {
   display: flex;
   justify-content: space-around;
 }
