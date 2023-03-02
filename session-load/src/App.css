@@ -1,4 +1,14 @@
 .climb {
+  border: 1px solid white;
+}
+
+.climb-header, .climb-body, .climb-foot {
   display: flex;
   justify-content: space-around;
+}
+
+.load {
+  border: 1px solid;
+  margin-left: 9px;
+  padding: 5px;
 }
