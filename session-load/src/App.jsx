@@ -3,6 +3,7 @@ import './App.css';
 import findTops from './helpers/tops';
 import findLoad from './helpers/load';
 import findTotalLoad from './helpers/totalLoad';
+import { FaEdit } from "react-icons/fa";
 
 function App() {
   const [climbs, setClimbs] = useState([]); 
@@ -35,7 +36,8 @@ function App() {
       <div className='climbs-container'>
         {climbs.map((climb) => (
           <div key={climbs.indexOf(climb)} className='climb'>
-            <div className='section'>
+            <div className='section climb-head'>
+              <FaEdit size='2rem' color='white'/>
               <h2>{climb.name}</h2>
               <h2>V{climb.grade}</h2>
             </div>
@@ -44,17 +46,25 @@ function App() {
               <h3>Tops: {findTops(climb.attempts)}</h3>
             </div>
             <div className='section'>
-              <h3>Attempt Load: 
+              <h3>Completion Score per Attempt:</h3>
+            </div>
+            <div className='section attempts'>
+              {climb.attempts.map((attempt, index) => (
+                <span key={index} className='load active'>{attempt}</span>
+              ))}         
+              <button className='add-attempt'>+</button>
+            </div>
+            <div className='section'>
+              <h3>Load per Attempt:</h3>
+            </div>
+            <div className='section attempts'>
                 {findLoad(climb.attempts, climb.grade).map((load, index) => (
                   <span key={index} className='load'>{load}</span>
                 ))}
-              </h3>
             </div>
-            {climb.attempts.length > 1 &&
-              <div className='section'>
-                <h3>Total Climb Load: {findLoad(climb.attempts, climb.grade).reduce((a, c) => a + c)}</h3>
-              </div>
-            }
+            <div className='section climb-tail'>
+              <h2>Total Climb Load: {findLoad(climb.attempts, climb.grade).reduce((a, c) => a + c)}</h2>
+            </div>
           </div>
         ))}
       </div>

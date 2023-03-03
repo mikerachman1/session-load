@@ -5,10 +5,48 @@
 .section {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.climb-head {
+  border-bottom: 1px solid white;
+  background-color: rgb(28, 28, 28);
+}
+
+.climb-tail {
+  border-top: 1px solid white;
+  background-color: rgb(28, 28, 28);
+  margin-top: 2rem;
 }
 
 .load {
   border: 1px solid;
   margin-left: 9px;
   padding: 5px;
+}
+
+.active:hover {
+  border: 2px solid yellow;
+  cursor: pointer;
+}
+
+.attempts {
+  align-items: center;
+  justify-content: center;
+}
+
+.add-attempt {
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  margin-left: 9px;
+
+}
+
+.add-attempt:hover {
+  border: 4px solid green;
 }

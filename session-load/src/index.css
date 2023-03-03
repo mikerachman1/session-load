@@ -20,6 +20,7 @@ h5,
 h6,
 p,
 span,
+button,
 a {
   color: white;
   font-family: 'Bungee', Arial, Helvetica, sans-serif;
@@ -30,7 +31,7 @@ h1 {
   text-align: center;
 }
 
-h3, span {
+h3, span, button {
   font-family: 'Bungee Hairline', Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
