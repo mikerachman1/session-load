@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Outline&family=Bungee+Shade&display=swap');
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sessions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.add-session {
+  background-color: black;
+  border: 1px solid white;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-family: 'Bungee', Arial, Helvetica, sans-serif;
+}
