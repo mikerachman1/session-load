@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import './App.css';
-import findTops from './helpers/tops';
-import findLoad from './helpers/load';
-import findTotalLoad from './helpers/totalLoad';
+import '../styles/App.css';
+import findTops from '../helpers/tops';
+import findLoad from '../helpers/load';
+import findTotalLoad from '../helpers/totalLoad';
 import { FaEdit } from "react-icons/fa";
 
 function App() {

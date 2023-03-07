@@ -1,6 +1,8 @@
 {
   "users": {
     "mike11": {
+      "email": "mike11@email.com",
+      
       "sessions": {
         "1": {
           "date": "3-3-2023",

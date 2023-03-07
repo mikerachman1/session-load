@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import './App.css';
-import './Sessions.css'
+import '../styles/App.css';
+import '../styles/Sessions.css'
 
 
 function Sessions() {
@@ -57,7 +57,7 @@ function Sessions() {
       <button className='add-session'>Add Session</button>
       <div className='sessions-container'>
         {sessions.map((session, index) => (
-          <div key={index} className='climb'>
+          <div key={index} className='session'>
             <div className='section'>
               <h2>{session.date}</h2>
               <h2>{session.location}</h2>
