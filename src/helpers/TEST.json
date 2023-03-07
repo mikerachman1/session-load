@@ -1,0 +1,47 @@
+{
+  "users": {
+    "mike11": {
+      "sessions": {
+        "1": {
+          "date": "3-3-2023",
+          "location": "Holy Boulders",
+          "climbs": [
+            {
+              "name": "Trillium",
+              "grade": 9,
+              "attempts": [0.4, 0.5, 0.7, 0.2]
+            },
+            {
+              "name": "Open Gates",
+              "grade": 5,
+              "attempts": [1]
+            },
+            {
+              "name": "Full Grain",
+              "grade": 4,
+              "attempts": [0.8, 1]
+            }
+          ],
+          "totalLoad": 28.4
+        },
+        "2": {
+          "date": "3-9-2023",
+          "location": "Climbing Gym",
+          "climbs": [
+            {
+              "name": "Roof climb",
+              "grade": 7,
+              "attempts": [0.2, 0.5, 1]
+            },
+            {
+              "name": "Slab wall",
+              "grade": 5,
+              "attempts": [0.2, 0.3, 0.6, 0.7, 1]
+            }
+          ],
+          "totalLoad": 25.9
+        } 
+      }
+    } 
+  }
+}
